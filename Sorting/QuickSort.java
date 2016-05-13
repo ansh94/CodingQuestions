@@ -1,3 +1,12 @@
+/*
+Time Complexity: 
+Worst Case: O(n*n) The worst case occurs when the partition process always picks greatest or smallest element as pivot. 
+If we consider above partition strategy where last element is always picked as pivot, the worst case would occur 
+when the array is already sorted in increasing or decreasing order. 
+Best Case: O(nlogn) The best case occurs when the partition process always picks the middle element as pivot.
+Average Case: O(nlogn)
+
+*/
 import java.util.Arrays;
 
 public class QuickSort{
@@ -21,7 +30,7 @@ public class QuickSort{
 		recursiveQuickSort(array,0,array.length-1);
 	}
 
-	//recurisve quick sort method
+	//recursive quick sort method
 	public static void recursiveQuickSort(int[] A,int low,int high){
 		int pivot;
 		pivot = Partition(A,low,high);

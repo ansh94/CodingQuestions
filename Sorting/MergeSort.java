@@ -1,3 +1,11 @@
+/*
+Time Complexity:Time complexity of Merge Sort is O(nLogn) in all 3 cases (worst, average and best) as 
+merge sort always divides the array in two halves and take linear time to merge two halves.
+Auxiliary Space: O(n)
+Algorithmic Paradigm: Divide and Conquer
+Sorting In Place: No in a typical implementation
+Stable: Yes
+*/
 import java.util.*;
 
 public class MergeSort{
