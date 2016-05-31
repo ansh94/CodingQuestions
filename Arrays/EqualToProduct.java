@@ -6,10 +6,15 @@ The first line of each test case is N and a product p.
 The second line of each test case contain N number of a[].
 Output:
 Print Yes if two numbers product is equal to p else No.
+
+Level:School
+********Amazon Question************
 */
 import java.util.*;
 import java.lang.*;
 import java.io.*;
+
+
 class EqualToProduct
  {
 	public static void main (String[] args)
@@ -21,6 +26,7 @@ class EqualToProduct
             int n = sc.nextInt(); //n- no of elements
             int p = sc.nextInt(); //p-product
             
+            //creating a hashset of second factors
             Set<Integer> secondFactors = new HashSet<>();
             boolean result = false;
             for(int j=0;j<n;j++){
@@ -41,6 +47,5 @@ class EqualToProduct
             sb.append(result?"Yes\n":"No\n");
          }
          System.out.println(sb.toString());
-	 }
-	 
+	 }	 
 }
