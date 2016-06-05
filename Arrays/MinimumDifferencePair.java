@@ -22,29 +22,29 @@ public class MinimumDifferencePair{
 	    for(int i=0;i<t;i++){
 	       int n = sc.nextInt(); //n- no of elements
 	       int[] a = new int[n];
-           for(int j=0;j<n;j++){
-              a[j] = sc.nextInt();
-	        }
-           findMinimumDiffrence(a);
-        }
+	       for(int j=0;j<n;j++){
+	       	a[j] = sc.nextInt();
+	       }
+	       findMinimumDiffrence(a);
+	   }
 	}
 
 	public static void findMinimumDiffrence(int[] a){
 		int n = a.length;
-		
+
 		//sort the array in ascending order
 		Arrays.sort(a);
 
 		//initialize diffrence as infinite
-	    int minDiff = Integer.MAX_VALUE;
+		int minDiff = Integer.MAX_VALUE;
 
 	    //find the minimum diffrence by comparing adjacent pairs in sorted array
-	    for (int i=0;i<n-1;i++) {
-	    	if(a[i+1] - a[i] < minDiff){
-	    		minDiff = a[i+1] - a[i];
-	    	}
-	    }
-	    System.out.println(minDiff);
+		for (int i=0;i<n-1;i++) {
+			if(a[i+1] - a[i] < minDiff){
+				minDiff = a[i+1] - a[i];
+			}
+		}
+		System.out.println(minDiff);
 	}
 }
 
