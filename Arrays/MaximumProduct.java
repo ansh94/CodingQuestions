@@ -29,7 +29,7 @@ class MaximumProduct{
 		}
 	}
 	public static void maxProduct(int[] a,int n){
-		//initialize maximum and secondMaximum
+		//initialize largest and second largest
 		int posa = Integer.MIN_VALUE;
 		int posb = Integer.MAX_VALUE;
 
