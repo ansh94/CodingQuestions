@@ -24,11 +24,11 @@ class RearrangeArrayPositiveAndNegative{
 				n = sc.nextInt();
 			}
 			for (int i = 0; i < n; i++)
-               if(sc.hasNextInt())
-                arr[i] = sc.nextInt();
-               createArray(arr,n);
+                          if(sc.hasNextInt())
+                            arr[i] = sc.nextInt();
+                          createArray(arr,n);
 			System.out.println();
-            t--;
+            		t--;
 		}
 	}
 
@@ -56,11 +56,10 @@ class RearrangeArrayPositiveAndNegative{
 				j++;
 			}
 			//print negative numbers in odd positions
-			else
-            {
-            	System.out.print(neg[k]+" ");
-            	k++;
-            }
+			else{
+            			System.out.print(neg[k]+" ");
+            			k++;
+            		}
 		}
 	}
 }
